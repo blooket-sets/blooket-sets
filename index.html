@@ -41,7 +41,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.cla
   const GAME_REPO_BASE = 'https://theblazerader.github.io/blooket-sets/';
 
   try {
-    const response = await fetch('./games.json', { cache: 'no-store' });
+    const response = await fetch('https://theblazerader.github.io/blooket-sets/games.json', { cache: 'no-store' });
     if (!response.ok) {
       throw new Error('Could not load games.json (' + response.status + ')');
     }
